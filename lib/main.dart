@@ -39,14 +39,14 @@ class _MyAppState extends State<MyApp> {
       ],
       child: BlocBuilder<GuideBloc, GuideState>(
         builder: (context, GuideState state) {
-          var theme = lightTheme;
+          var mainTheme = lightTheme;
           if(state is ChangeThemeState)
             {
-                theme = state.theme;
+                mainTheme = state.theme;
             }
 
           return MaterialApp(
-            theme: theme,
+            theme: mainTheme,
             debugShowCheckedModeBanner: false,
             home: WelcomeScreen(),
           );

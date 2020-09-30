@@ -13,7 +13,7 @@ final darkTheme = ThemeData(
       iconTheme: IconThemeData(
         color: Colors.white,
       )),
-  cardColor: Colors.black54,
+  cardColor: Colors.black87,
 );
 
 final lightTheme = ThemeData(

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "606872731601",
+    "firebase_url": "https://wec-guide.firebaseio.com",
+    "project_id": "wec-guide",
+    "storage_bucket": "wec-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606872731601:android:b48f9bdec2f6be2555aaf0",
+        "android_client_info": {
+          "package_name": "com.example.wec_guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606872731601-l0p5d6h21i68jndjrlt3gi5q9b03g60i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr5WXLEFc1QmXd1PAFrStjdKm4HqZlXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606872731601-l0p5d6h21i68jndjrlt3gi5q9b03g60i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

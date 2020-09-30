@@ -1,5 +1,3 @@
-
-
 class GuideEvent{}
 
 class ChangeGuidePageEvent extends GuideEvent{

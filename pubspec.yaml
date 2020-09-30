@@ -53,7 +53,6 @@ flutter:
   assets:
     - images/webclub-logo-orange.png
     - images/news.png
-    - images/events.png
     - images/events.jpg
     - images/mess.jpg
 

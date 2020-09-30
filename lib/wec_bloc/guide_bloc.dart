@@ -29,24 +29,24 @@ class GuideBloc extends Bloc<GuideEvent, GuideState> {
         yield ChangeGuidePageState(
             text: text, buttonColor: buttonColor, imageLocation: imageLoc);
       }
-    }
-    else if(event is GetInfoEvent){
-     var itemName = event.itemName;
-     var snaps = FirebaseFirestore.instance.collection(itemName).snapshots();
-     yield GetInfoState(snaps: snaps,tag: event.tag);
-    }else if(event is ChangeThemeEvent){
+    } else if (event is GetInfoEvent) {
+      var itemName = event.itemName;
+      var snaps = FirebaseFirestore.instance.collection(itemName).snapshots();
+      yield GetInfoState(snaps: snaps, tag: event.tag);
+    } else if (event is ChangeThemeEvent) {
       var theme;
-      Color iColor,cColor;
-     if(event.theme == lightTheme){
-       theme = darkTheme;
-       iColor = Colors.white;
-       cColor = Colors.black87;
-     }else{
-       theme = lightTheme;
-       iColor = Colors.black87;
-       cColor = Colors.white;
-     }
-      yield ChangeThemeState(theme:theme,indicatorColor: iColor,container: cColor);
+      Color iColor, contColor;
+      if (event.theme == lightTheme) {
+        theme = darkTheme;
+        iColor = Colors.white;
+        contColor = Colors.black87;
+      } else {
+        theme = lightTheme;
+        iColor = Colors.black87;
+        contColor = Colors.white;
+      }
+      yield ChangeThemeState(
+          theme: theme, indicatorColor: iColor, container: contColor);
     }
   }
 }

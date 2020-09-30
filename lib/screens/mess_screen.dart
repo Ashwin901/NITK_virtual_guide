@@ -13,7 +13,6 @@ class MessScreen extends StatefulWidget {
 
 class _MessScreenState extends State<MessScreen> {
   var title, subTitle, sColor;
-  var fireStore;
   List days;
   @override
   void initState() {
@@ -21,7 +20,6 @@ class _MessScreenState extends State<MessScreen> {
     title = widget.title;
     subTitle = widget.subTitle;
     sColor = widget.color;
-    fireStore = FirebaseFirestore.instance;
     days = [
       "Monday",
       "Tuesday",

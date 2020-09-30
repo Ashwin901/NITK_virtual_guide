@@ -71,7 +71,7 @@ class _GuideScreenState extends State<GuideScreen> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 140),
+                  padding: EdgeInsets.only(top: 139),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:wec_guide/components/mess_widget.dart';
+import 'package:wec_guide/constants.dart';
 import 'package:wec_guide/wec_bloc/events.dart';
 import 'package:wec_guide/wec_bloc/guide_bloc.dart';
 import 'package:wec_guide/components/exit.dart';
@@ -48,6 +49,12 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
               return <Widget>[
                 SliverAppBar(
                   actions: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 17),
+                      child: Text('theme :',style: textStyle.copyWith(
+                        color:indicatorColor
+                      ),),
+                    ),
                     Switch(
                       activeColor: Colors.black87,
                       value: switchValue,
@@ -74,7 +81,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                         image: AssetImage("images/webclub-logo-orange.png"),
                       ),
                       SizedBox(width: 3.6,),
-                      Text("WEC NITK")
+                      Text("WEC NITK", style: textStyle,)
                     ],
                   ),
                   floating: true,
@@ -108,7 +115,6 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                 if(state is ChangeThemeState){
                   indicatorColor = state.indicatorColor;
                   containerColor = state.container;
-                  print(containerColor);
                 }
                 return Container(
                   color: containerColor,

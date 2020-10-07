@@ -64,6 +64,7 @@ class _MessScreenState extends State<MessScreen> {
             body: ListView.builder(
                 itemCount: menu.length,
                 itemBuilder: (context, index) {
+                  //Sends info of the menu of that particular day to the MenuItem(menu_item.dart)
                   return MenuItem(
                     day: days[index],
                     menuOfTheDay: menu[index].data()['menu'],

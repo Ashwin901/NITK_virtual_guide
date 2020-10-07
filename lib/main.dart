@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'wec_bloc/state.dart';
 import 'wec_bloc/guide_bloc.dart';
 import 'screens/guide_screen.dart';
-import 'screens/news_screen.dart';
+import 'screens/main_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'theme_options.dart';
 
@@ -40,6 +40,8 @@ class _MyAppState extends State<MyApp> {
       child: BlocBuilder<GuideBloc, GuideState>(
         builder: (context, GuideState state) {
           var mainTheme = lightTheme;
+          //The theme is changed using the bloc pattern.Theme options is present in themeOptions.dart file
+          //The theme is changed here because when we change the theme here it will change the theme in all the other screens and components
           if(state is ChangeThemeState)
             {
                 mainTheme = state.theme;

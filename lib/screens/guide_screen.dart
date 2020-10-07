@@ -4,7 +4,7 @@ import 'package:wec_guide/constants.dart';
 import 'package:wec_guide/wec_bloc/events.dart';
 import 'package:wec_guide/components/exit.dart';
 import 'package:wec_guide/wec_bloc/guide_bloc.dart';
-import 'news_screen.dart';
+import 'main_screen.dart';
 import 'package:wec_guide/wec_bloc/state.dart';
 
 class GuideScreen extends StatefulWidget {
@@ -53,6 +53,7 @@ class _GuideScreenState extends State<GuideScreen> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       FlatButton(
+                        //If we press the skip button we can directly go to the MainScreen(news_events_screen.dart)
                         child: Text(
                           "skip",
                           style: textStyle.copyWith(

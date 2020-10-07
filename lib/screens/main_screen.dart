@@ -38,6 +38,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
     guideBloc = BlocProvider.of(context);
     return SafeArea(
       child: WillPopScope(
+        //WillPopScope is used to handle the back button
         onWillPop: () {
           return onBackPressed(context);
         },
@@ -121,6 +122,8 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                   child: Padding(
                     padding: EdgeInsets.only(top: 7),
                     child: TabBarView(
+                      //The tabBar has three elements news, events and mess menu
+                      // news and events are handled by displayWidget and menu is handed by messWidget in components folder
                       controller: tabController,
                       children: [
                         itemList(

@@ -1,16 +1,31 @@
-# wec_guide
+# NITK_Virtual_Guide
 
-A new Flutter application.
+This is a flutter application which is a virtual guide of NITK.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The application starts off with a introduction section where the user gets to know what the apllication does or what information is present in the app. The user if not interested can skip the introduction section.
 
-A few resources to get you started if this is your first Flutter project:
+### Theme :
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The application has two themes : 1)light theme 2) dark theme
+The application starts of with a light theme but the user can change it accordingly.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Modules :
+
+After the introduction section is the main screen where there is three sections,
+#### 1) News
+#### 2) Events
+#### 3) Mess
+
+In the news section we have the latest news of NITK from it's official website. Each of the news tile has a launch icon using which the user can visit the NITK website's news page and get more details about the particular news.
+
+In the events section we have the ongoing and upcoming events of NITK from it's official website. Just as the news section the events section also has a launch icon using which they can visit the official website and get more information about the events.
+
+In the mess section theres is 2 options Mess1(vegetarian) and Mess2(non-vegetarian), the user can select any option which will take the user to the mess page where the user can see the dialy menu of that particular mess. 
+
+### Strorage :
+
+All the information i.e., news, events and mess details is stored in firestore.
+
+

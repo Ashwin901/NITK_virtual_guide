@@ -14,9 +14,13 @@ The application starts of with a light theme but the user can change it accordin
 ### Packages used :
 
 [bloc: ^6.0.3](https://pub.dev/packages/bloc)
+
 [flutter_bloc: ^6.0.5](https://pub.dev/packages/flutter_bloc)
+
 [cloud_firestore: ^0.14.0+2](https://pub.dev/packages/cloud_firestore)
+
 [firebase_core: ^0.5.0](https://pub.dev/packages/firebase_core)
+
 [url_launcher: ^5.7.2](https://pub.dev/packages/url_launcher) Is used to take the user to the NITK official website.
 
 ### Modules :

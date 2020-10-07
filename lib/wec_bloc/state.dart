@@ -12,12 +12,6 @@ class ChangeGuidePageState extends GuideState{
   ChangeGuidePageState({this.text,this.buttonColor,this.imageLocation});
 }
 
-class GetInfoState extends GuideState{
-  var snaps;
-  var tag;
-  GetInfoState({this.snaps,this.tag});
-}
-
 class ChangeThemeState extends GuideState{
   var theme;
   Color indicatorColor,container;

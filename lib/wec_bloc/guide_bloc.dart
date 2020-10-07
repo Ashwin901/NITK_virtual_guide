@@ -29,11 +29,7 @@ class GuideBloc extends Bloc<GuideEvent, GuideState> {
         yield ChangeGuidePageState(
             text: text, buttonColor: buttonColor, imageLocation: imageLoc);
       }
-    } else if (event is GetInfoEvent) {
-      var itemName = event.itemName;
-      var snaps = FirebaseFirestore.instance.collection(itemName).snapshots();
-      yield GetInfoState(snaps: snaps, tag: event.tag);
-    } else if (event is ChangeThemeEvent) {
+    }else if (event is ChangeThemeEvent) {
       var theme;
       Color iColor, contColor;
       if (event.theme == lightTheme) {

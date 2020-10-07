@@ -2,6 +2,8 @@
 
 This is a flutter application which is a virtual guide of NITK.
 
+### The apk file is in the "apk file" folder.
+
 ## Getting Started
 
 The application starts off with a introduction section where the user gets to know what the apllication does or what information is present in the app. The user if not interested can skip the introduction section.
